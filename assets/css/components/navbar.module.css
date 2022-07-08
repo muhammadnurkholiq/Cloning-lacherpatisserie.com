@@ -1,0 +1,89 @@
+.container {
+  border-bottom: 1px solid rgba(36, 36, 36, 0.1);
+  z-index: 4;
+}
+
+/* notification */
+.notification {
+  width: 100%;
+  background-color: #88694e;
+  padding: 3vh 0 1vh;
+}
+
+.notification_P {
+  color: #fff;
+  text-align: center;
+  font-size: 88%;
+  font-family: Madera;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
+/* headerContent */
+.headerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.headerContent {
+  width: 51%;
+  display: flex;
+  flex-direction: row;
+  padding: 5.3vh 2vw 4vh 0;
+}
+
+.appLogo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 12%;
+}
+
+.appAction {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1vw;
+  gap: 1.5vw;
+}
+
+.appCart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.headerIcon {
+  font-size: 130%;
+}
+
+.headerIcon:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.cart {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+/* header navbar */
+.headerNavbar {
+  width: 100%;
+}
+
+.toogle {
+  z-index: 5;
+  margin-top: 1.4vh;
+}

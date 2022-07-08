@@ -1,0 +1,41 @@
+.adverts {
+  width: 15%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconSide {
+  width: 30%;
+  display: flex;
+}
+
+.icon {
+  font-size: 180%;
+  margin: auto;
+}
+
+.detailSide {
+  width: 70%;
+  text-align: center;
+}
+
+.title {
+  font-size: 93%;
+  line-height: 1.6;
+  color: #242424c3;
+  font-family: Madera, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.desc {
+  font-size: 93%;
+  line-height: 1.6;
+  color: #2424247e;
+  font-family: Madera;
+  font-weight: 400;
+  font-style: normal;
+}

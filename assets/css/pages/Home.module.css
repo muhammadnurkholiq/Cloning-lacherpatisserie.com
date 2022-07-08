@@ -1,0 +1,262 @@
+.home {
+  background-color: #fff;
+}
+
+/* carousel */
+.carousel {
+  width: 100%;
+}
+
+.carouselDetail {
+  position: absolute;
+  top: 70vh;
+  padding-left: 6vw;
+}
+
+.carouselTitle {
+  font-size: 90%;
+  font-family: Madera;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.carouselDesc {
+  font-size: 160%;
+  display: block;
+  font-family: Garamond, Baskerville, Caslon, serif;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+}
+
+.carouselType {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+}
+
+.carouselTypeInfo {
+  font-size: 85%;
+  line-height: 1.6;
+  color: #242424;
+  font-family: Madera, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.carouselButton {
+  color: #fff;
+  background-color: #88694e;
+  padding: 1.4vh 2vw;
+}
+
+.carouselButton:hover {
+  cursor: pointer;
+}
+
+.carouselButton:active {
+  color: #000;
+  background-color: #fff;
+}
+
+/* adverts */
+.advertsContainer {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 0 1vh;
+  gap: 2vw;
+}
+
+.advertsLine {
+  border-right: 1px solid rgba(36, 36, 36, 0.221);
+  height: 15vh;
+}
+
+/* collection */
+.collectionContainer {
+  background-color: #fff;
+}
+
+.collection,
+.collectionMonthly {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  padding: 8vh 0;
+}
+
+.collectionMonthlyTitle {
+  font-size: 250%;
+  text-align: center;
+  font-family: Garamond, Baskerville, Caslon, serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: -3vh;
+}
+
+/* location */
+.locationContainer {
+  width: 100%;
+  height: 68vh;
+  overflow: hidden;
+}
+
+.locationImage {
+  width: 100%;
+  transform: translateY(-54vh);
+}
+
+.locationDetails {
+  width: 30vw;
+  padding: 4vh 0 7vh;
+  background-color: #fff;
+  margin-top: -171vh;
+  margin-left: 5vh;
+  position: relative;
+  text-align: center;
+}
+
+.locationTop {
+  margin-bottom: 5vh;
+}
+
+.locationTitle {
+  font-size: 200%;
+  font-family: Garamond, Baskerville, Caslon, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.locationTitle2 {
+  font-size: 100%;
+  line-height: 100%;
+  color: #242424;
+  font-family: Madera, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 4vh 0 2vh;
+}
+
+.locationInfo {
+  font-size: 90%;
+  line-height: 60%;
+  color: #242424c5;
+  font-family: Madera, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.locationButton {
+  color: #fff;
+  background-color: #88694e;
+  padding: 1.4vh 2vw;
+  position: relative;
+}
+
+.locationButton:hover {
+  cursor: pointer;
+}
+
+.locationButton:active {
+  color: #000;
+  background-color: #fff;
+}
+
+/* testimonial */
+.testimonialContainer {
+  height: 40vh !important;
+  padding: 5vh;
+}
+
+.testimonialContent {
+  height: 100%;
+  padding: 1vh 0 8vh;
+}
+
+.testimonialItem {
+  min-height: 18vh;
+  transition: all 0.3s ease;
+}
+
+.testimonialTitle {
+  font-size: 250%;
+  text-align: center;
+  font-family: Garamond, Baskerville, Caslon, serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 3vh;
+}
+
+.testimonialMessage {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.666) !important;
+  font-size: 85%;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 0 11vw;
+}
+
+.testimonialUser {
+  text-align: center;
+  font-size: 85%;
+  font-family: Madera, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* blog */
+.blogContainer {
+  background-color: #f3f3f3;
+  padding: 3vh;
+  text-align: center;
+}
+
+.blogTitle {
+  font-size: 250%;
+  text-align: center;
+  font-family: Garamond, Baskerville, Caslon, serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 3vh;
+}
+
+.blogContent {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5vw;
+  margin-bottom: 5vh;
+}
+
+.blogButton {
+  padding: 1.5vh 4vh;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  background-color: #383a3c;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 100%;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.blogButton:active {
+  color: #000;
+  background-color: #fff;
+}

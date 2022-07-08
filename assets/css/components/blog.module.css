@@ -1,0 +1,42 @@
+.blog {
+  width: 35%;
+}
+
+.blogImage {
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.blogTitle {
+  font-size: 80%;
+  font-family: Madera, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.blogDesc {
+  color: rgba(0, 0, 0, 0.666) !important;
+  font-size: 90%;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.blogNav {
+  color: rgba(0, 0, 0, 0.666) !important;
+  font-size: 100%;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.blogNav:hover {
+  color: rgba(0, 0, 0, 0.547) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.547);
+}

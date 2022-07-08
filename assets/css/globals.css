@@ -1,0 +1,56 @@
+/* font */
+@import url(//db.onlinewebfonts.com/c/a3e629ef74f23205613f908b609d9b72?family=Madera);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Madera !important;
+}
+
+/* header  */
+.navbar-nav {
+  gap: 1.5vw !important;
+}
+
+.dropdown-menu {
+  overflow: hidden;
+  margin-top: 1.2vh !important;
+  margin-left: -1vw !important;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.76) !important;
+  font-size: 94%;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.76) !important;
+  font-size: 94%;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 2vh;
+}
+
+.dropdown-item:hover {
+  background-color: transparent !important;
+  opacity: 0.7;
+}
+
+/* testimonial */
+.carousel button {
+  background-color: rgb(63, 63, 63) !important;
+  border-radius: 100%;
+  width: 1.1% !important;
+  padding: 0.6vh 0.01vw !important;
+  margin-top: -9vh;
+}

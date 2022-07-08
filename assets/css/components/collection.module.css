@@ -1,0 +1,64 @@
+.collection1 {
+  width: 17%;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* collection */
+.image1 {
+  width: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.title1 {
+  position: absolute;
+  color: #fff;
+  display: block;
+  font-size: 200%;
+  font-family: Garamond, Baskerville, Caslon, serif;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.collection1:hover .image1,
+.title1:hover .image1 {
+  transform: scale(1.1);
+}
+
+/* collection monthly */
+.collectionMonthly {
+  width: 17%;
+  overflow: hidden;
+  height: auto;
+}
+
+.imageMonthly {
+  width: 100%;
+  transition: 1s;
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+.titleMonthly {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  font-size: 110%;
+  font-family: Garamond, Baskerville, Caslon, serif;
+  font-weight: 200;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.collectionMonthly:hover .imageMonthly,
+.titleMonthly:hover .imageMonthly {
+  transform: scale(1.1);
+  margin-bottom: 3vh;
+}
