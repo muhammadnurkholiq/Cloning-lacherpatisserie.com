@@ -4,6 +4,9 @@ import React, { useState } from "react";
 // react bootstrap
 import { Carousel } from "react-bootstrap";
 
+// iconfy
+import { Icon } from "@iconify/react";
+
 // css
 import Styles from "../assets/css/pages/Home.module.css";
 
@@ -38,9 +41,9 @@ export default function Home() {
           <h1 className={Styles.carouselDesc}>Uji Matcha Tart</h1>
           <div className={Styles.carouselType}>
             <h1 className={Styles.carouselTypeInfo}>Uji Matcha</h1>
-            <span data-icon="bi:dot"></span>
+            <Icon icon="bi:dot" />
             <h1 className={Styles.carouselTypeInfo}>Azuki</h1>
-            <span data-icon="bi:dot"></span>
+            <Icon icon="bi:dot" />
             <h1 className={Styles.carouselTypeInfo}>Entrement Tart</h1>
           </div>
           <btn className={Styles.carouselButton}>1 Day Pre-order</btn>
