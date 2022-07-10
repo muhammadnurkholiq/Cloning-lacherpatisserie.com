@@ -1,3 +1,6 @@
+// next
+import Image from "next/image";
+
 // react
 import React, { useState } from "react";
 
@@ -11,12 +14,12 @@ import { Icon } from "@iconify/react";
 import Styles from "../assets/css/pages/Home.module.css";
 
 // components
-import Navbar from "../components/Layout/navbar";
-import Footer from "../components/Layout/footer";
-import Adverts from "../components/home/adverts";
-import Collection from "../components/home/collection";
-import Blog from "../components/home/blog";
-import Help from "../components/home/help";
+import Header from "../components/Layout/Header";
+import Footer from "../components/Layout/Footer";
+import Adverts from "../components/home/Adverts";
+import Collection from "../components/home/Collection";
+import Blog from "../components/home/Blog";
+import Help from "../components/home/Help";
 
 // images
 import CarouselImage from "../assets/images/carousel.jpg";
@@ -30,23 +33,32 @@ export default function Home() {
 
   return (
     <>
-      {/* navbar */}
-      <Navbar />
+      {/* Header */}
+      <Header />
       {/* content */}
       <div className={Styles.home}>
         {/* carousel */}
-        <img src={CarouselImage.src} className={Styles.carousel} />
-        <div className={Styles.carouselDetail}>
-          <h1 className={Styles.carouselTitle}>NEW FLAVOUR</h1>
-          <h1 className={Styles.carouselDesc}>Uji Matcha Tart</h1>
-          <div className={Styles.carouselType}>
-            <h1 className={Styles.carouselTypeInfo}>Uji Matcha</h1>
-            <Icon icon="bi:dot" />
-            <h1 className={Styles.carouselTypeInfo}>Azuki</h1>
-            <Icon icon="bi:dot" />
-            <h1 className={Styles.carouselTypeInfo}>Entrement Tart</h1>
+        <div className={Styles.carouselContainer}>
+          <Image
+            src={CarouselImage.src}
+            className={Styles.carouselImage}
+            alt="Carousel image"
+            width="100%"
+            height="50%"
+            layout="responsive"
+          />
+          <div className={Styles.carouselDetail}>
+            <h1 className={Styles.carouselTitle}>NEW FLAVOUR</h1>
+            <h1 className={Styles.carouselDesc}>Uji Matcha Tart</h1>
+            <div className={Styles.carouselType}>
+              <h1 className={Styles.carouselTypeInfo}>Uji Matcha</h1>
+              <Icon icon="bi:dot" />
+              <h1 className={Styles.carouselTypeInfo}>Azuki</h1>
+              <Icon icon="bi:dot" />
+              <h1 className={Styles.carouselTypeInfo}>Entrement Tart</h1>
+            </div>
+            <btn className={Styles.carouselButton}>1 Day Pre-order</btn>
           </div>
-          <btn className={Styles.carouselButton}>1 Day Pre-order</btn>
         </div>
         {/* adverts */}
         <div className={Styles.advertsContainer}>
@@ -129,9 +141,13 @@ export default function Home() {
         </div>
         {/* location */}
         <div className={Styles.locationContainer}>
-          <img
+          <Image
             src="https://cdn.shopify.com/s/files/1/0040/2305/8561/files/storefront_65175bc7-c865-4345-aaf3-7159a050bfce_2100x.jpg?v=1617550765"
             className={Styles.locationImage}
+            width="100%"
+            height="100%"
+            layout="responsive"
+            alt="location"
           />
           <div className={Styles.locationDetails}>
             <div className={Styles.locationTop}>
@@ -169,9 +185,9 @@ export default function Home() {
               <div className={Styles.testimonialItem}>
                 <div className={Styles.testimonialMessage}>
                   <p>
-                    "Great service & selection, perfect for last minute gifts as
+                    Great service & selection, perfect for last minute gifts as
                     well with their same-day delivery! The lemon tart is always
-                    a hit!"
+                    a hit!
                   </p>
                 </div>
                 <div className={Styles.testimonialUser}>
@@ -183,8 +199,8 @@ export default function Home() {
               <div className={Styles.testimonialItem}>
                 <div className={Styles.testimonialMessage}>
                   <p>
-                    "Delicate and scrumptious. Definitely top-notch dessert in
-                    Msia. Will order again for future occasions!"
+                    Delicate and scrumptious. Definitely top-notch dessert in
+                    Msia. Will order again for future occasions!
                   </p>
                 </div>
                 <div className={Styles.testimonialUser}>
@@ -196,17 +212,17 @@ export default function Home() {
               <div className={Styles.testimonialItem}>
                 <div className={Styles.testimonialMessage}>
                   <p>
-                    "Great service & selection, perfect for last minute gifts as
+                    Great service & selection, perfect for last minute gifts as
                     well with their same-day delivery! The lemon tart is always
-                    a hit!" Rebecca Jo-Rushdy (Google reviews) "Delicate and
+                    a hit! Rebecca Jo-Rushdy (Google reviews) Delicate and
                     scrumptious. Definitely top-notch dessert in Msia. Will
-                    order again for future occasions!" Siaujuen Chin (Google
-                    Review) "Lacher Patisserie is my go to place when i need a
+                    order again for future occasions! Siaujuen Chin (Google
+                    Review) Lacher Patisserie is my go to place when i need a
                     reliable birthday cake provider. I ordered the jivarra
                     mousse cake twice and hazelnut praline twice over the span
                     of 8 months (so many birthdays during MCO period!). The
                     cakes look good, simple and classy. Perfect for a small and
-                    intimate bday celebration. Well done!"
+                    intimate bday celebration. Well done!
                   </p>
                 </div>
                 <div className={Styles.testimonialUser}>
@@ -218,12 +234,12 @@ export default function Home() {
               <div className={Styles.testimonialItem}>
                 <div className={Styles.testimonialMessage}>
                   <p>
-                    "I trust them with the quality of patisseries (HALAL & REAL
+                    I trust them with the quality of patisseries (HALAL & REAL
                     FINEST INGREDIENT) and delivery. Definitely if you are
                     looking for a true gourmand, they know how to be creative
                     with their desserts and understand how they travel to your
                     doorstop. Whatever you see on their website THAT is exactly
-                    what you will get and more."
+                    what you will get and more.
                   </p>
                 </div>
                 <div className={Styles.testimonialUser}>
@@ -235,12 +251,12 @@ export default function Home() {
               <div className={Styles.testimonialItem}>
                 <div className={Styles.testimonialMessage}>
                   <p>
-                    "This is one of the best bakers in KL! My favourite is their
+                    This is one of the best bakers in KL! My favourite is their
                     valrhona cakes (hazelnut & raspberry) and the gateau fromage
                     (which is basically a cheesecake) is awesome too! Their mini
                     desserts are great if you want it for a small number of
                     people and want to try all the different types of cakes they
-                    have."
+                    have.
                   </p>
                 </div>
                 <div className={Styles.testimonialUser}>
@@ -252,11 +268,11 @@ export default function Home() {
               <div className={Styles.testimonialItem}>
                 <div className={Styles.testimonialMessage}>
                   <p>
-                    "the cake was delivered to me as a gift and when I had my
+                    the cake was delivered to me as a gift and when I had my
                     first bite on it I was OMG how come I never heard of this
                     shop!! the pastry is superb and being a fussy dessert eater,
                     their pastry is one of the best in kl. better than those 5
-                    star dining places. really amazing"
+                    star dining places. really amazing
                   </p>
                 </div>
                 <div className={Styles.testimonialUser}>

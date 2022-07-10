@@ -10,7 +10,7 @@ import { Icon } from "@iconify/react";
 // css
 import Styles from "../../assets/css/components/help.module.css";
 
-export default function help() {
+export default function Help() {
   const [help, setHelp] = useState(false);
   const [helpMenu, setHelpMenu] = useState(true);
   const [alerts, setAlerts] = useState(true);
@@ -88,7 +88,7 @@ export default function help() {
               >
                 <path
                   fill="#88694e"
-                  fill-opacity="1"
+                  fillOpacity={1}
                   d="M0,96L120,101.3C240,107,480,117,720,106.7C960,96,1200,64,1320,48L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
                 ></path>
               </svg>
@@ -324,7 +324,7 @@ export default function help() {
               >
                 <path
                   fill="#88694e"
-                  fill-opacity="1"
+                  fillOpacity={1}
                   d="M0,96L120,101.3C240,107,480,117,720,106.7C960,96,1200,64,1320,48L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
                 ></path>
               </svg>
@@ -365,8 +365,8 @@ export default function help() {
                           Step 4 : Add to cart.
                         </li>
                         <li className={Styles.helpContentBodyLi}>
-                          Step 5 : Select '<strong>Delivery</strong>' or '
-                          <strong>In-store Pickup</strong>'. (Delivery fee will
+                          Step 5 : Select <strong>Delivery</strong> or
+                          <strong>In-store Pickup</strong>. (Delivery fee will
                           be calculated after you have entered the delivery
                           details.)
                         </li>

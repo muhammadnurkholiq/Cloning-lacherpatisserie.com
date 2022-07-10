@@ -1,5 +1,6 @@
 // next
 import Head from "next/head";
+import Image from "next/image";
 
 // bootstrap
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -13,7 +14,7 @@ import Styles from "../../assets/css/components/navbar.module.css";
 // image
 import LogoNav from "../../assets/images/logo-nav.png";
 
-export default function navbar() {
+export default function Header() {
   return (
     <>
       {/* head html */}
@@ -44,10 +45,13 @@ export default function navbar() {
         <div className={Styles.headerContainer}>
           <div className={Styles.headerContent}>
             <div className={Styles.appLogo}>
-              <img
+              <Image
                 src={LogoNav.src}
                 alt="Lacherpatisserie"
                 className={Styles.logoImage}
+                width="50%"
+                height="50%"
+                objectFit="contain"
               />
             </div>
             <div className={Styles.appAction}>
@@ -61,6 +65,7 @@ export default function navbar() {
               </div>
             </div>
           </div>
+          {/* header navbar */}
           <div className={Styles.headerNavbar}>
             <Navbar expand="lg">
               <Container className={Styles.navbarContainer}>
@@ -142,7 +147,6 @@ export default function navbar() {
             </Navbar>
           </div>
         </div>
-        {/* header navbar */}
       </div>
     </>
   );

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@iconify/react": "^3.2.2",
     "eslint": "8.19.0",
-    "eslint-config-next": "12.2.0"
+    "eslint-config-next": "12.2.0",
+    "jest": "^28.1.2"
   }
 }

@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 // css
 import Styles from "../../assets/css/components/adverts.module.css";
 
-export default function adverts({ icon, title, desc }) {
+export default function Adverts({ icon, title, desc }) {
   return (
     <div className={Styles.adverts}>
       <div className={Styles.iconSide}>
